@@ -103,11 +103,11 @@ Also on the panel you can see:
 
 Light configuration with CPU monitor available for local use:
 
-- medium >30% <80%
+- medium load >30% <80%
 
 ![menu](pictures/Screenshot_8.png)
 
-- high >80%
+- high load >80%
 
 ![menu](pictures/Screenshot_9.png)
 
