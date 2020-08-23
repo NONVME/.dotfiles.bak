@@ -1,0 +1,78 @@
+[global_config]
+  title_inactive_bg_color = "#4C566A"
+  title_inactive_fg_color = "#D8DEE9"
+  title_receive_bg_color = "#8FBCBB"
+  title_receive_fg_color = "#2E3440"
+  title_transmit_bg_color = "#88C0D0"
+  title_transmit_fg_color = "#2E3440"
+  inactive_color_offset = 0.9095940959409594
+[keybindings]
+[profiles]
+  [[default]]
+    allow_bold = False
+    visible_bell = True
+    urgent_bell = True
+    icon_bell = False
+    background_color = "#2E3440"
+    cursor_color = "#D8DEE9"
+    font = Droid Sans Mono Slashed for Powerline 11
+    foreground_color = "#D8DEE9"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scroll_on_output = True
+    scrollback_lines = 10000
+    scrollback_infinite = True
+    palette = "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8FBCBB:#ECEFF4"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[i3]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:21
+      maximised = False
+      fullscreen = False
+      size = 1914, 1053
+      title = noname@Laptop: ~
+      last_active_term = c6df92e7-ed5c-4e29-bafb-390a2b2993f7
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 953
+      ratio = 0.49921424829753797
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 524
+      ratio = 0.5
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 506f6ac3-5182-493d-bd98-5d308633e9ad
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = c6df92e7-ed5c-4e29-bafb-390a2b2993f7
+    [[[terminal5]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 13dcbdde-c2b7-44cf-a728-658ffdd25e71
+[plugins]

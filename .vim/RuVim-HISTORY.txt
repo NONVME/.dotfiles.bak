@@ -1,0 +1,109 @@
+История выпусков Русского Vim
+=============================
+
+0.5 16-Jun-04	Русский Vim 6.3.000
+
+		Перевод документации:
+		Переведено 76 файлов справочника из 116
+		(47874 из 95856 строк)
+
+		Новые файлы справочника (10):
+
+		    autocmd.txt
+		    diff.txt
+		    filetype.txt
+		    fold.txt
+		    map.txt
+		    pattern.txt
+		    quickfix.txt
+		    russian.txt
+		    tagsrch.txt
+		    windows.txt
+		
+		Новое: Сообщения, меню, страницы справочника man
+		
+		Изменения с момента выхода Русского Vim 0.4, 
+		связанные с новыми заплатками Vim 6.2-6.3:
+
+		- РуВим поставляется в виде готового к использованию 
+		  архива, который достаточно распаковать в каталог
+		  рабочей среды Vim ($VIMRUNTIME)
+		- Файлы справки переименованы из *.txt в *.rux
+		  в соответствии с изменениями, связанными с выходом
+		  заплатки Vim 6.2.299. Пожалуйста, используйте 
+		  Vim 6.2.506 или более позднюю версию для полноценной
+		  работы РуВим.
+                - Внесены изменения в следующие файлы:
+		  
+		    change.txt	    Vim 6.2.327
+		    cmdline.txt	    Vim 6.2.442
+		    editing.txt	    Vim 6.2.420
+		    indent.txt	    Vim 6.2.504
+		    motion.txt	    Vim 6.2.298, 6.2.311, 6.2.421
+		    options.txt	    Vim 6.2.299, 6.2.393, 6.2.417,
+		                        6.2.431, 6.2.450, 6.2.481,
+					6.2.516, 6.3a.022
+		    os_amiga.txt    Vim 6.2.501
+		    starting.txt    Vim 6.2.419, 6.2.505
+		    various.txt	    Vim 6.2.299
+
+		  Кроме того, все файлы обновлены до состояния Vim 6.3.000.
+
+		Исправлены опечатки, изменены или добавлены 
+		метки в справочнике, другие исправления:
+
+		    help.txt
+		    editing.txt
+		    options.txt
+
+
+0.4 02-Mar-04	Russian Vim 6.2.263 documentation
+		66 help files of 115 translated
+		(39583 of 90305 lines)
+		
+		New files translated:
+
+		    cmdline.txt
+		    options.txt
+		    sponsor.txt
+
+		Changes according to Vim 6.2 service patches:
+		
+		    usr_41.txt	    Vim 6.2.021, 6.2.073
+		    usr_05.txt	    Vim 6.2.073
+		    insert.txt	    Vim 6.2.148
+		    motion.txt	    Vim 6.2.190
+		    help.txt	    Vim 6.2.191
+		    various.txt	    Vim 6.2.197
+
+		Typo fixes, links added/changed, other edits:
+
+		    change.txt, cmdline.txt, howto.txt, insert.txt,
+		    motion.txt, os_dos.txt, os_msdos.txt, os_win32.txt,
+		    quickref.txt, starting.txt, uganda.txt, undo.txt,
+		    various.txt
+
+0.3 02-Aug-03	New files translated:
+		    change.txt
+		    indent.txt
+		    insert.txt
+		    repeat.txt
+		    undo.txt
+		    visual.txt
+		    various.txt
+		    recover.txt
+
+		Fixed links:
+		    change.txt
+		    editing.txt
+		    intro.txt
+		    motion.txt
+		    tips.txt
+		    usr_24.txt
+		    usr_30.txt
+		    
+		Links replaced for their Russian versions in:
+			quickref.txt
+		
+0.2 21-Jun-03   Documentation update for Vim 6.2.
+0.1 20-Jun-03	First public release.

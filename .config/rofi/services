@@ -1,0 +1,30 @@
+#!/bin/bash
+
+ROFI_OPTIONS=(-theme $HOME/.config/rofi/nord.rasi )
+
+useradmin=$(echo -e "$USER\nroot" | rofi "${ROFI_OPTIONS[@]}" -dmenu -i -p ">> ")
+#setts="list-units --no-pager --type=service --no-legend"
+setts="list-units --type=service --state=running --no-pager --no-legend"
+case "$useradmin" in
+    "user")
+        selected=$(systemctl --user $setts | rofi "${ROFI_OPTIONS[@]}" -dmenu -i -p "UPU: " | awk '{print $1;}')
+        com="systemctl --user"
+        ;;
+    "root")
+        selected=$(sudo systemctl $setts | rofi "${ROFI_OPTIONS[@]}" -dmenu -i -p "UPS: " | awk '{print $1;}')
+        com="sudo systemctl"
+        ;;
+esac
+
+selected=$(echo $selected | awk '{print $1;}')
+[[ -z $selected ]] && exit 1
+
+action=$(echo -e "status\nstart\nstop\nrestart" | rofi "${ROFI_OPTIONS[@]}" -dmenu -i -p ">> ")
+case "$action" in
+    "status")
+        notify-send "$($com status $selected)"
+        ;;
+    "start"|"stop"|"restart")
+        $com $action $selected
+        ;;
+esac
