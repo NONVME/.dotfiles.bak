@@ -26,6 +26,8 @@
 
 ![NONVME WM](pictures/screenshot_1.gif)
 
+![NONVME WM](pictures/Screenshot_10.png)
+
 The nord theme may not seem contrasting enough to you [(issue #195)](https://github.com/arcticicestudio/nord-vim/issues/195) and you'd be right. The [script](.config/polybar/brightnessdesktop.sh) is used to change the gamma, when you raise the brightness in monitor to max.
 
 
